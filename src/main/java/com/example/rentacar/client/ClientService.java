@@ -5,8 +5,10 @@ import com.example.rentacar.car.CarRepository;
 import com.example.rentacar.client.Client;
 import com.example.rentacar.client.ClientRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class ClientService {
 
     private final CarRepository carRepository;
